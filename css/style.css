@@ -1,0 +1,273 @@
+/* Plynuly scroll */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'weight' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.material-symbols-outlined:not(#prepinani) {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.vyhledavani {
+  transform: translateX(-40px);
+}
+
+header {
+  height: 80px;
+}
+
+.boxik,
+.boxik2 {
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 100%;
+}
+
+.boxik2 {
+  border-image-source: linear-gradient(to right, #79b4d8 16%, #f64740 44%, #f64740 56%, #131b8d 84%);
+}
+
+.boxik a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+  transition: transform .2s;
+}
+
+.boxik a:hover {
+  color: rgb(42, 42, 42);
+  transform: scale(1.05);
+}
+
+.test {
+  padding: 10px;
+}
+
+.h4-icon {
+  transform: translateY(2px);
+  float: right;
+}
+
+@media screen and (max-width: 576px) {
+  .vyhledavani {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .material-symbols-outlined {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 484px) {
+
+  /*
+  header a#kkt {
+    display: none;
+  }
+  */
+  .nav-pills li a {
+    font-size: 1rem;
+    transform: translateY(4px);
+  }
+
+  header ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  header a#kkt {
+    display: none;
+  }
+}
+
+.smol,
+.smol a {
+  color: rgb(94, 94, 94);
+  font-size: 12px;
+}
+
+.NEG {
+  transform: translateY(6px);
+}
+
+.mapa {
+  display: block;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 250px;
+}
+
+.devioznianimace {
+  position: relative;
+  animation: devioznianimace 0.6s
+}
+
+@keyframes devioznianimace {
+  from {
+    transform: translateY(10px);
+    opacity: 0
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+header img {
+  transition: 0.5s transform;
+}
+
+header img:hover {
+  transform: translateX(10px);
+}
+
+.footerikony {
+  font-size: 16px;
+  transform: translateY(2px);
+  margin-right: 6px;
+}
+
+.bordery {
+  border-right: 1px solid #dee2e6;
+}
+
+.bordery:last-child {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+@media screen and (max-width: 575px) {
+  .bordery {
+    border-right: 0;
+    border-bottom: 1px solid #dee2e6;
+    margin-top: 1rem;
+  }
+
+  .bordery:first-child {
+    margin-top: 0;
+  }
+
+  .boxik2 {
+    border-top: 0;
+  }
+}
+
+.copyright {
+  box-shadow: rgba(0, 0, 0, 0.54) 0px 0px 200px;
+  background-color: #535353;
+  color: #bdbdbd;
+  padding: 0.75rem;
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+/* Prepinac clanku */
+
+button,
+button:hover,
+button:active,
+button:focus {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+div#clanek2,
+div#clanek3 {
+  display: none;
+}
+
+.nemuzes {
+  color: lightgrey;
+  pointer-events: none;
+}
+
+/* Bordery */
+
+.border-1,
+.border-2,
+.border-3,
+.border-4,
+.border-5,
+.border-6,
+.boxik2 {
+  border-top: 2px solid;
+  border-image-slice: 1;
+}
+
+.border-1 {
+  border-image-source: linear-gradient(to right, #4c8aff, #a0c2ff);
+}
+
+.border-2 {
+  border-image-source: linear-gradient(to right, #ff6565, #ffb5b5);
+}
+
+.border-3 {
+  border-image-source: linear-gradient(to right, #ff4c4f, #edc3b2);
+}
+
+.border-4 {
+  border-image-source: linear-gradient(to right, #106511, #8bf174);
+}
+
+.border-5 {
+  border-image-source: linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
+}
+
+.border-6 {
+  border-image-source: linear-gradient(90deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+}
+
+/* Text shadow na fotky */
+
+.carousel-caption h3 {
+  text-shadow: 0 0 6px rgba(83, 83, 83, 0.4);
+}
+
+/* Button fix */
+
+.jnasasd {
+  display: inline-block;
+  width: calc(100% - 72px);
+}
+
+/* Neskutecny hover effect na obrazky */
+
+div#partneri img {
+  transition: all .5s;
+}
+
+div#partneri img:hover {
+  filter: opacity(0.6);
+  transform: scale(0.95);
+}
+
+/* Scroll fix na obrazky */
+
+div#a {
+  scroll-margin-top: 50px;
+}
